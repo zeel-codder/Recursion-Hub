@@ -49,6 +49,7 @@ Write the solution of any **recursive problem** in any language of your choice. 
 
 - [x] [NthFibonacciNumber](./Code/FibonacciNumber.java)
 - [x] [StringCreation](./Code/StringCreation.cpp)
+- [x] [GCD_LCM](./Code/GCD_LCM.java)
 
 # Rules
 
