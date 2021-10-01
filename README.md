@@ -42,6 +42,26 @@ Write the solution of any **recursive problem** in any language of your choice. 
 ```
 [Hole Code](./Code/FibonacciNumber.java)
 
+3. Stobogrammatic Number
+  --java
+  /**
+* 👉 Problem: Count frequency of Stobogrammatic Number in given range.
+* 👑 Description: Find thefrequencies and print it.
+* 🎓 Explanation(optional):Strobogrammatic Number is a number whose numeral is rotationally symmetric so that it appears the same when rotated 180 degrees.
+*  In other words, Strobogrammatic Number appears the same right-side up and upside down.
+*    Ex. 
+*    6 after 180° rotation : (6 → 9)
+     9 after 180° rotation : (9 → 6)
+     therefore 69 ,00,88,11, such are the numbers.
+*    init={{"0","0"},{"1","1"},{"8","8"},{"6","9"},{"9","6"}}
+*    dfs(int i,int left,char [] no,long l0w,long high,int [] c){
+   for(char[] in:init){             
+   no[left]=in[0];
+   no[i-1-left]=in[1];
+   dfs(i,left+1,no,l,h,c);        
+*/
+```
+
 #### 6. Add problem name in the list given below and make sure two problems are not the same
 
 
