@@ -1,0 +1,52 @@
+//no when rotated 180 degree looks same
+/*
+like 69
+Question is to find in a given range
+*/
+public class Strobogm{
+
+public void main(String[] args){
+
+int count=strobogrammaticRange("50","100");
+System.out.println(count);
+}
+//predefined pairs
+private static final char[][] init={{"0","0"},{"1","1"},{"8","8"},{"6","9"},{"9","6"}};
+
+public int strobogrammaticRange(String l, String h){
+
+int[] c=new int[1];  //to count how many of them
+
+for(int i=l.length();i<=h.length();i++){
+dfs(i,0,new char[i],Long.parseLong(l),Long.parseLong(h),c);     //traversing dfs
+
+}
+return c[0];        //returning count
+}
+
+private void dfs(int i,int left,char [] no,long l,long h,int [] c){
+
+if(left>i-1-left){
+
+String new=new String(no);
+long n=Long.parseLong(new);
+if(l<=n&&n<=h){
+c[0]++;
+}
+return;
+}
+for(char[] in:init){             //taking pairs one by one
+if(in[0]=="0"&&(left==0&&i!=1)){           //comparing first element of pair
+continue;
+}
+
+
+if(left==i-1-left&&in[0]!=in[1]){
+continue;
+}
+no[left]=in[0];
+no[i-1-left]=in[1];
+dfs(i,left+1,no,l,h,c);                          //recursive call(traversing no.s in range)
+}
+}
+}
