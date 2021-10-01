@@ -56,6 +56,7 @@ Write the solution of any **recursive problem** in any language of your choice. 
 - [x] [StringCreation](./Code/StringCreation.cpp)
 - [x] [GCD_LCM](./Code/GCD_LCM.java)
 - [x] [CheckPalindrome](./Code/Palindrome.java)
+- [x] [InsertionSort](./Code/InsertionSort.java)
 
 # Rules
 
