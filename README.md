@@ -1,4 +1,4 @@
-# Hacktoberfest2021 Recursion Hub
+# Recursion Hub
 
 Write the solution of any **recursive problem** in any language of your choice. You Don't Need to write an optimal solution just write code with help of Recursion.
 
