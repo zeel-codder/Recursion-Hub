@@ -12,8 +12,7 @@ Write the solution of any **recursive problem** in any language of your choice. 
 
 #### 3. Select any problem which can solve by recursion. Make sure your problem is not present in the list below.
 
-#### 4. select any programing language of your choice. and write code to solve the problem(Make sure file name explain the problem in brief). and add the problem in list.
-
+#### 4. Select any programing language of your choice(Write code in ***./Code*** folder only). and write code to solve the problem(Make sure file name explain the problem in brief). and add the problem in list.
 #### 5. In Code make sure to add two sections in the comment.
 
 1. Contributor Introduction
@@ -54,6 +53,7 @@ Write the solution of any **recursive problem** in any language of your choice. 
 
 - [x] [NthFibonacciNumber](./Code/FibonacciNumber.java)
 - [x] [Factorial](./Code/Factorial.java)
+- [x] [StringCreation](./Code/StringCreation.cpp)
 
 # Rules
 
