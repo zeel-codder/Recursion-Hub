@@ -12,7 +12,7 @@ Write the solution of any **recursive problem** in any language of your choice. 
 
 #### 3. Select any problem which can solve by recursion. Make sure your problem is not present in the list below.
 
-#### 4. select any programing language of your choice. and write code to solve the problem(Make sure file name explain the problem).
+#### 4. select any programing language of your choice. and write code to solve the problem(Make sure file name explain the problem in brief).
 #### 5. In Code make sure to add two sections in the comment.
 1. Contributor Introduction
 ```java
