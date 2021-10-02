@@ -28,12 +28,7 @@
             
             <div>Problem:${data.data.Problem}</div>
             <div>Description:${data.data.Description}</div>
-            <div>Explain:
-                ${data.data.Explanation || '#'}
-
-                
-                
-            </div>
+            
             <p>
                 <a class="btn btn-primary" data-bs-toggle="collapse" href=${"#collapseExample"+index} role="button" aria-expanded="false" aria-controls=${"collapseExample"+index}
                 >
