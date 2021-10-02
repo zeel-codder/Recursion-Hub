@@ -1,15 +1,9 @@
 ---
 Name: 'sujaykummari'
 Github: 'https://github.com/sujaykummari'
-Problem: 'reversingArray'
-Description: 'reversing the elements in array'
-Ex. 
-Input :  arr[] = {4, 5, 1, 2}
-Output : arr[] = {2, 1, 5, 4}
-1) Initialize start and end indexes as start = 0, end = n-1 
-2) In a loop, swap arr[start] with arr[end] and change start and end as follows : 
-start = start +1, end = end – 1 
-Language: 'java' 
+Problem: 'reversingarray'
+Description: 'reversing the array elements. '
+Language: 'c++'
 ---
 ```cpp
 // Iterative C++ program to reverse an array
