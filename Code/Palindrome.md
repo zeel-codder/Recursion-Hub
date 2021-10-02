@@ -1,18 +1,12 @@
-// package Code;
-
-/**
- * Contributor
- * Name: Sockalingam
- * Github:https://github.com/Sockalingam29
- * WebSite(optional):https://sockalingam-portfolio.netlify.app/
- */
-
- 
-/**
-*👉 Problem: Palindrome Check
-*👑 Description: Write a function that takes a string and returns if the string is a palindrome.
-*/
-
+---
+Name: 'Sockalingam'
+Github: 'https://github.com/sakshamian'
+WebSite: ''
+Problem: 'Palindrome Check. '
+Description: 'Write a function that takes a string and returns if the string is a palindrome.'
+Language: 'java'   
+---
+```java
 import java.util.Scanner;
 
 public class Main {
@@ -40,3 +34,5 @@ public class Main {
             return checkPalindrome(str,++s,--e);
     }
 }
+
+```
