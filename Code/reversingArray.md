@@ -1,7 +1,6 @@
 ---
 Name: 'sujaykummari'
 Github: 'https://github.com/sujaykummari'
-WebSite: '-'
 Problem: 'reversingArray'
 Description: 'reversing the elements in array'
 Ex. 
