@@ -66,7 +66,7 @@ MarkDown File Formate
             Name: 'Your Ans'  
             ```
 2. Your Code
-    Write code in this md formate. Try to add problem explanation in command in your code. See demo code.
+    Write code in this md formate. Try to add problem explanation in comment in your code. See demo code.
     <br>
     <img src="/static/code.png">
 
