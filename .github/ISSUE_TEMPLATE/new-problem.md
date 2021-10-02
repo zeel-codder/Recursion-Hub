@@ -2,7 +2,7 @@
 name: New Problem
 about: Ask for problem is taken or written yet.
 title: NewProlemAsk
-labels: Ui
+labels: newproblem
 assignees: ''
 
 ---
