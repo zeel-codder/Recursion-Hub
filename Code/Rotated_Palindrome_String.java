@@ -8,7 +8,7 @@ Explanation: 'Consider all rotations of the given string and check if any rotati
 Language: 'Java' 
 ---
 
-```
+```java
 class Main
 {
     // Recursive function to check if `str[low…high]` is a palindrome or not
