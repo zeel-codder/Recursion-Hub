@@ -1,8 +1,10 @@
 
 /**
-* Contributor🎅
-* Name: Ashutoshpandey-coder (Ashutosh pandey)
-* Github: https://github.com/Ashutoshpandey-coder
+* Name: 'Ashutosh pandey'
+* Github: 'https://github.com/Ashutoshpandey-coder'
+* Problem: 'Tower Of Hanoi'
+* Description: 'Move disc from Tower A to Tower C (target)'
+* Language: 'java'
 */
 
 /**
