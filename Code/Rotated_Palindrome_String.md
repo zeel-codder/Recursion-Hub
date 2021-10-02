@@ -1,4 +1,4 @@
-  
+
 ---
 Name: 'Himanshu Malviya'  
 Github: 'https://github.com/Himanshu664'  
@@ -7,6 +7,7 @@ Description: 'Given a String, check if a string is a rotated palindrome or not'
 Explanation: 'Consider all rotations of the given string and check if any rotation is a palindrome or not. If we have found a rotation that is a palindrome, return true; otherwise, return false'  
 Language: 'Java' 
 ---
+
 
 ```java
 class Main
