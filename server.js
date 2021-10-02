@@ -4,12 +4,12 @@ const fs = require('fs')
 const matter = require('gray-matter');
 // app.use(express.static(''))
 // app.use(express.urlencoded())
-app.engine('html', require('ejs').renderFile)
-app.set('view engine', 'html');
+// app.engine('html', require('ejs').renderFile)
+// app.set('view engine', 'html');
 app.use('/public', express.static(__dirname + '/static'))
 
 app.get('/', (req, res) => {
-    res.render(__dirname + '/template/index.html')
+    res.sendFile(__dirname + '/template/index.html')
 });
 
 app.get('/list', (req, res) => {

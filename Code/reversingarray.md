@@ -3,8 +3,9 @@ Name: 'sujaykummari'
 Github: 'https://github.com/sujaykummari'
 Problem: 'reversingarray'
 Description: 'reversing the array elements. '
-Language: 'c++'
+Language: 'cpp'
 ---
+
 ```cpp
 // Iterative C++ program to reverse an array
 #include <bits/stdc++.h>

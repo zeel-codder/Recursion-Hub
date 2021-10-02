@@ -3,11 +3,10 @@ Name: 'Saksham Negi'
 Github: 'https://github.com/sakshamian'  
 Problem: 'Sum Of Digits'  
 Description: 'Given a number, you need to find sum of its digits using recursion.' 
-Explanation:  'Input: 589  Output: 22'
 Language: 'cpp'
 ---
 
-```
+```C
 #include<bits/stdc++.h>
 using namespace std;
  

@@ -6,9 +6,10 @@ Problem: 'Binary Search'
 Description: 'To search & check if particular element is present in the list or not using binary search.'
 Explanation: 'Size of an array, Array, & key element is given by user & following algorithm will 
 check if that element is present in arraylist or not & give its index accordingly!
-'  
+' 
 Language: 'C++' 
 ---
+
 ```C++
 #include <iostream>
 using namespace std;

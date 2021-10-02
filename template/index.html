@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,33 +8,61 @@
     <title>Recursion Hub</title>
 </head>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-<link rel="stylesheet" href="/public/css/prisum.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="/public/css/prisum.css"> -->
 <style>
-
-    .container,.row {
+    .container,
+    .row {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
-    .row{
+
+    .row {
         flex-direction: row;
     }
-    .item{
-        width: 90%;
-        margin: 1rem;
+
+    .container-list{
+        width: 100%;
     }
-    @media (max-width:1024px) {
-  .item{
-    width: 98vw;
-    margin: auto;
-    padding: 20px;
-  }
-}​
+
+    .item {
+        width: 100%;
+        margin: 2rem 0;
+
+    }
+
     .item > *{
+        margin: 1rem 0;
+    }
+
+    .row >*{
+        margin: 0;
+        padding:0;
+    }
+
+
+    .container-list > code{
+        color: black !important;
+        font-family: monospace;
+    }
+
+    @media (max-width:1024px) {
+        .item {
+            width: 98vw;
+            margin: auto;
+            padding: 20px;
+        }
+    }
+
+    ​ .item>* {
         padding: .4rem 0;
+    }
+    img{
+        width:30%;
     }
 </style>
 
@@ -41,12 +70,14 @@
 
     <div class="container">
         <h1>Recursion Hub</h1>
-       <div> Count: <span class="count">0</span></div>
-       <div class="input-group mb-3">
-        <input type="text"  class="input form-control" onkeyup="SetList(event)" placeholder="Find Problem">
-      </div>
+        <img src="/public/Hacktoberfest2021.png" alt="none">
+        <h3> Count of Programs: <span class="count">0</span></h3>
+
+        <div class="input-group mb-3">
+            <input type="text" class="input form-control" onkeyup="SetList(event)" placeholder="Find Problem">
+        </div>
         <div class="container-list">
-            <div class="item">
+            <!-- <div class="item">
 
                 <div class="row">
                     <h3>Name</h3>
@@ -67,17 +98,20 @@
                 <div class="card card-body">
                     <pre><code class="language-css"></code></pre>
                 </div>
-            </div>
-        </div>
-            
-            
+            </div> -->
         </div>
 
+
     </div>
-    
+
+    </div>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
 <script src="/public/js/index.js"></script>
-<script src="/public/js/prisum.js"></script>
+<!-- <script src="/public/js/prisum.js"></script> -->
+
 </html>
