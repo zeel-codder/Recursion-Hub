@@ -1,12 +1,10 @@
 ---
-Name: Saksham Negi  
-Github: https://github.com/sakshamian  
-Problem: Sum Of Digits  
-Description: Given a number, you need to find sum of its digits using recursion. 
-Explanation:  
-    Input: 589
-    Output: 22
-Language: C++
+Name: 'Saksham Negi'  
+Github: 'https://github.com/sakshamian'  
+Problem: 'Sum Of Digits'  
+Description: 'Given a number, you need to find sum of its digits using recursion.' 
+Explanation:  'Input: 589  Output: 22'
+Language: 'cpp'
 ---
 
 #include<bits/stdc++.h>
@@ -22,8 +20,7 @@ ll compute(ll n){
     if(n==0){
         return 0;
     }
-
-    return (n%10 + compute(n/10));
+   return (n%10 + compute(n/10));
 }
  
 void solve(){
