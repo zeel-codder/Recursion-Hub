@@ -1,0 +1,7 @@
+* Contributor🎅
+* Name: krishan821(krishan pathak)
+* Github: https://github.com/krishan821
+* Problem: 'Recursion-Duplicate character formatting'
+* Description: 'Take as input str, a string. Write a recursive function which returns a new string in which all duplicate consecutive characters are separated by a ‘ * ’. E.g. for “hello” return “hel*lo”. Print the value returned'
+* Language: 'java'
+*/
