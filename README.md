@@ -45,7 +45,6 @@ MarkDown File Formate
     WebSite: 'Your Ans'  
     Problem: 'Your Ans'  
     Description: 'Your Ans'  
-    Explanation: 'Your Ans'  
     Language: 'Your Ans' 
     ---
     ```
@@ -67,7 +66,7 @@ MarkDown File Formate
             Name: 'Your Ans'  
             ```
 2. Your Code
-    Write code in this md formate.
+    Write code in this md formate. Try to add problem explanation in command in your code. See demo code.
     <br>
     <img src="/static/code.png">
 
