@@ -1,23 +1,14 @@
   
-// package Code;
+---
+Name: 'Himanshu Malviya'  
+Github: 'https://github.com/Himanshu664'  
+Problem: 'Check if a string is a rotated palindrome or not'  
+Description: 'Given a String, check if a string is a rotated palindrome or not'  
+Explanation: 'Consider all rotations of the given string and check if any rotation is a palindrome or not. If we have found a rotation that is a palindrome, return true; otherwise, return false'  
+Language: 'Java' 
+---
 
-/**
- * Contributor🎅
- * Name: Himanshu Malviya
- * Github:https://github.com/Himanshu664
- */
-
-
-/**
-* 👉 Problem: Check if a string is a rotated palindrome or not
-* 👑 Description: Given a String, check if a string is a rotated palindrome or not.
-* 🎓 Explanation(optional):A naive solution is to consider all rotations of the given string and check if any rotation is a palindrome or not. If we have found a rotation that is a palindrome, return true; otherwise, return false..
-*    Ex. 
-*    CBAABCD is a rotated palindrome as it is a rotation of palindrome ABCDCBA.
-*    BAABCC is a rotated palindrome as it is a rotation of palindrome ABCCBA.   
-*/
-
-
+```
 class Main
 {
     // Recursive function to check if `str[low…high]` is a palindrome or not
@@ -71,3 +62,4 @@ class Main
         }
     }
 }
+```
