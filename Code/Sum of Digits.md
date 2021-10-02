@@ -7,6 +7,7 @@ Explanation:  'Input: 589  Output: 22'
 Language: 'cpp'
 ---
 
+```
 #include<bits/stdc++.h>
 using namespace std;
  
@@ -32,3 +33,4 @@ int main() {
     fast;
     solve();
 }
+```
