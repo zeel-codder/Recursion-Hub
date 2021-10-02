@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recursion Hub</title>
-    
 </head>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -72,89 +71,6 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
-
-<script>
-    
-    const Count=document.querySelector('.count');
-    const listData=document.querySelector('.container-list');
-    const Input=document.querySelector('.input');
-    let list=[]
-    axios.get('/list').then((res)=>{
-        list=res.data;
-        SetData(list)
-    })
-    
-    function SetData(list){
-        
-        Count.innerHTML=list.length;
-        
-        const toadd=list.map((data)=>{
-            
-            return `
-            <div class="item">
-                
-                <div class="row">
-                    <h3>${data.data.Name}</h3>
-                    <a href="${data.data.Github}">Github</a>
-                <a href="${data.data.WebSite}">WebSite </a>
-            </div>
-            
-            <div>Problem:${data.data.Problem}</div>
-            <div>Description:${data.data.Description}</div>
-            <div>Explain:
-                ${data.data.Explanation || '#'}
-
-                
-                
-            </div>
-            <p>
-                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Code
-                </a>
-                
-            </p>
-            <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                    <pre class="language-${data.data.Language || 'bash'}"><code >
-                        
-                        ${
-                            
-                            data.content.split("```")[1].substr(data.content.split("```")[1].indexOf("\n"))
-                            
-                            
-                        }
-                        
-                        
-                    </code>
-                    
-                </pre>
-            </div>
-            </div>
-        </div>
-        `
-        
-    }).join(' ');
-    
-    listData.innerHTML=toadd;
-}
-
-function SetList(e){
-
-if(Input.value=="") return SetData(list);
-  const q=  new RegExp(Input.value, 'gi');
-  
-  const newlist=list.filter((data)=>{
-    
-
-    return data.data.Name.match(q) || data.data.Problem.match(q);
-  })
-  SetData(newlist);
-}
-
-
-
-</script>
-
+<script src="/public/js/index.js"></script>
 <script src="/public/js/prisum.js"></script>
 </html>

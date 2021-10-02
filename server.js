@@ -9,11 +9,8 @@ app.set('view engine', 'html');
 app.use('/public', express.static(__dirname + '/static'))
 
 app.get('/', (req, res) => {
-
-
     res.render(__dirname + '/template/index.html')
-
-})
+});
 
 app.get('/list', (req, res) => {
 
@@ -21,8 +18,7 @@ app.get('/list', (req, res) => {
     // const data = JSON.stringify(list);
     // console.log(data)
     res.send(JSON.stringify(list));
-
-})
+});
 
 
 const port = process.env.PORT || 3000;
