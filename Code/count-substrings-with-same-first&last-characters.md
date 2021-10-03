@@ -4,10 +4,10 @@
                    
 
 
-# Python 3 program to count substrings with same first and last characters
-def countSubstr(s):
-	if len(s) == 0:
-		return 0
+## Python 3 program to count substrings with same first and last characters
+### def countSubstr(s):
+###	if len(s) == 0:
+###		return 0
 	charMap, numSubstr = countSubstrHelper(s, 0, len(s)-1)
 	return numSubstr
 
