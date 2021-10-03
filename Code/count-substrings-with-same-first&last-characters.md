@@ -1,5 +1,5 @@
 | Name | GitHub | Problem | Language |
-| -----| ----- | ----- | ----- |
+| :-----: | :-----: | :-----: | :-----: |
 | Kartikeya Consul | https://github.com/Karssido | Recursive solution to count substrings with same first and last characters | Python |                    
                    
 
