@@ -5,6 +5,7 @@
 
 
 ## Python 3 program to count substrings with same first and last characters
+```python 
 def countSubstr(s):
 	if len(s) == 0:
 		return 0
