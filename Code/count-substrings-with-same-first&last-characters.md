@@ -1,39 +1,35 @@
-| Name | GitHub | Problem | Language |
-| :-----: | :-----: | :-----: | :-----: |
-| Kartikeya Consul | https://github.com/Karssido | Recursive solution to count substrings with same first and last characters | Python |                    
+| Name | GitHub | Problem | Description | Language |
+| :-----: | :-----: | :-----: | :-----: | :-----: |
+| Kartikeya Consul | https://github.com/Karssido | Count substrings with same first and last characters | if we carefully observe then we can realize that the answer just depends on frequencies of characters in the original string. For example in string abcab, frequency of ‘a’ is 2, and substrings contributing to answering are a, abca and a respectively, a total of 3, which is calculated by (frequency of ‘a’+1)C2. | Python |                    
                    
 
 
 ## Python 3 program to count substrings with same first and last characters
 ```python 
-def countSubstr(s):
-	if len(s) == 0:
-		return 0
-	charMap, numSubstr = countSubstrHelper(s, 0, len(s)-1)
-	return numSubstr
-def countSubstrHelper(string, start, end):
-	if start >= end: # our base case for the recursion. When we have one character
-		return {string[start]: 1}, 1
-	mid = (start + end)//2
-	mapLeft, numSubstrLeft = countSubstrHelper(
-		string, start, mid) # solve the left half
-	mapRight, numSubstrRight = countSubstrHelper(
-		string, mid+1, end) # solve the right half
-	# add number of substrings from left and right
-	numSubstrSelf = numSubstrLeft + numSubstrRight
-	# multiply the characters from left set with matching characters from right set
-	# then add to total number of substrings
-	for char in mapLeft:
-		if char in mapRight:
-			numSubstrSelf += mapLeft[char] * mapRight[char]
-	# Add all the key,value pairs from right map to left map
-	for char in mapRight:
-		if char in mapLeft:
-			mapLeft[char] += mapRight[char]
-		else:
-			mapLeft[char] = mapRight[char]
-	# Return the map of character and the sum of substring from left, right and self
-	return mapLeft, numSubstrSelf
+# Most efficient Python program to count all
+# substrings with same first and last characters.
 
-print(countSubstr("abcab"))
+MAX_CHAR = 26; # assuming lower case only
+
+def countSubstringWithEqualEnds(s):
+	result = 0;
+	n = len(s);
+
+	# Calculating frequency of each character
+	# in the string.
+	count = [0]*MAX_CHAR;
+	for i in range(n):
+		count[ord(s[i])-ord('a')]+=1;
+
+	# Computing result using counts
+	for i in range(MAX_CHAR):
+		result += (count[i]*(count[i]+1)/2);
+
+	return result;
+
+# Driver code
+s = "abcab";
+print(countSubstringWithEqualEnds(s));
+```
+### The above code has time complexity of O(n) and requires O(1) extra space.
 
