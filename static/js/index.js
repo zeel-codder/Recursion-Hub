@@ -44,6 +44,7 @@ function SetData(list) {
             </p>
             <div class="collapse" id=${"collapseExample" + index}>
                 <div class="card card-body">
+                
                     <h3> ${data.data.Language.toLowerCase()} </h3>
 
                     <pre>
