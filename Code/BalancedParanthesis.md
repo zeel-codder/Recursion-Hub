@@ -4,7 +4,7 @@ Github: 'https://github.com/DragonUncaged'
 WebSite: 'https://www.linkedin.com/in/ankitrao/'
 Problem: 'Print thee Balanced Paranthesis'
 Description: 'For The Given number n print all the valid paranthesis.'
-Explanation: ' i'th can be ‘(‘ if the count of ‘(‘ till i’th is less than n and i’th character can be ‘)’ if the count of ‘(‘ is greater than the count of ‘)’ till index i. '
+Explanation: ' ith can be ‘(‘ if the count of ‘(‘ till i’th is less than n and i’th character can be ‘)’ if the count of ‘(‘ is greater than the count of ‘)’ till index i. '
 Language: 'c++' 
 ---
 ```c++
