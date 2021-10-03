@@ -9,7 +9,7 @@ Language: 'c++'
 
 ---
 ```c++
-/**
+/*
 Ex. 
 Input:
 1 2 3 4
