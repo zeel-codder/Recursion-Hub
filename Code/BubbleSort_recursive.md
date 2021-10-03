@@ -8,7 +8,7 @@ Explanation: 'Same the Bubble Sort Algorithm But the Loop is being replaced By R
 Language: 'c++' 
 ---
 ```c++
-/**
+/*
 Ex. 
 Input:
 6
