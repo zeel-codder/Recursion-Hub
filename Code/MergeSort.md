@@ -6,7 +6,7 @@ Problem: 'MergeSort in JavaScript'
 Description: 'Recursive method for sorting in JS'  
 Language: 'JavaScript' 
 ---
-
+```
 const arr = [23, 4, 67, 32, 1, 7, 56, 5, 89];
 const mergeSort = arr => {
    if (arr.length < 2){
@@ -35,3 +35,5 @@ const merge = (left, right) => {
    return res;
 };
 console.log(mergeSort(arr));
+
+```
