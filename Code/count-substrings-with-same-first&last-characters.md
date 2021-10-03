@@ -1,6 +1,6 @@
 | Name | GitHub | Problem | Description | Language |
 | :-----: | :-----: | :-----: | :-----: | :-----: |
-| Kartikeya Consul | https://github.com/Karssido | Count substrings with same first and last characters | if we carefully observe then we can realize that the answer just depends on frequencies of characters in the original string. For example in string abcab, frequency of ‘a’ is 2, and substrings contributing to answering are a, abca and a respectively, a total of 3, which is calculated by (frequency of ‘a’+1)C2. | Python |                    
+| Kartikeya Consul | https://github.com/Karssido | Count substrings with same first and last characters | If we carefully observe then we can realize that the answer just depends on frequencies of characters in the original string. For example in string abcab, frequency of ‘a’ is 2, and substrings contributing to answering are a, abca and a respectively, a total of 3, which is calculated by (frequency of ‘a’+1)C2. | Python |                    
                    
 
 
