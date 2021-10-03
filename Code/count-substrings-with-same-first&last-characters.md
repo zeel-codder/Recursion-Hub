@@ -1,7 +1,5 @@
-                                    Name	                        Github		                  Problem		                        Language
-                                Kartikeya Consul        https://github.com/Karssido     Program to count                         Python
-                                                                                        substrings with same 
-                                                                                        first and last characters                    
+| Name | GitHub | Problem | Language |
+| Kartikeya Consul | https://github.com/Karssido | Recursive solution to count substrings with same first and last characters | Python |                    
                    
 
 
