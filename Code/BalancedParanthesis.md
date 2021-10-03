@@ -8,7 +8,7 @@ Explanation: ' i'th can be ‘(‘ if the count of ‘(‘ till i’th is less t
 Language: 'c++' 
 ---
 ```c++
-/**
+/*
 Ex. 
 Input:
 n = 4
