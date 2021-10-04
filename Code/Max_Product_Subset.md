@@ -5,7 +5,7 @@ Problem: 'Maximum Product Subset in an array'
 Description: 'C++ brute force solution for the problem'  
 Language: 'C++' 
 ---
-``` C++ ```
+``` C++ 
 
 #include <iostream>
 #include <vector>
@@ -70,5 +70,5 @@ int main()
  
     return 0;
 }
-
+```
 
