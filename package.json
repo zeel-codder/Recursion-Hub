@@ -1,0 +1,30 @@
+{
+  "name": "recursion-hub",
+  "version": "1.0.0",
+  "description": "Write the solution of any **recursive problem** in any language of your choice. You Don't Need to write an optimal solution just write code with help of Recursion.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeel-codder/Recursion-Hub.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeel-codder/Recursion-Hub/issues"
+  },
+  "homepage": "https://github.com/zeel-codder/Recursion-Hub#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "gray-matter": "^4.0.3",
+    "install": "^0.13.0",
+    "nodemon": "^2.0.13",
+    "pug": "^3.0.2"
+  }
+}
