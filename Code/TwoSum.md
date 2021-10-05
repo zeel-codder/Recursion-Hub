@@ -12,7 +12,7 @@ Language: 'Java'
 ```java
 import java.util.*;
 
-public class selling_stocks {
+public class twoSumLeetcode {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter length of array");
