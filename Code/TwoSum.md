@@ -13,6 +13,7 @@ Language: 'Java'
 import java.util.*;
 
 public class twoSumLeetcode {
+    static Map<Integer, Integer>map = new HashMap<Integer,Integer>();
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter length of array");
@@ -29,20 +30,16 @@ public class twoSumLeetcode {
         System.out.println("index "+ans[0] +","+ "index "+ans[1]);
     }
     public static int[] twoSum(int[] nums, int target){
-        int[] result = {0,0}; //initialized ther result
-        Map<Integer, Integer> map = new HashMap<>();
-        /*
-        * for every entry in the array, store the (target-num) into the map with the index of the num
-        * When the (target- num)appears in the array, we can return the values at that moment itself
-        */
-        for(int i=0;i<nums.length;i++){
-            if(map.containsKey(target-nums[i])) {
-                result[0] = i;
-                result[1] = map.get(target-nums[i]);
-            }
-            else map.put(nums[i],i);
-        }
-        return result;
+        return twoSum2(nums, target, 0);
     }
-}
+    public static int[] twoSum2(int[] nums, int target, int i) {
+           int lookUp = target-nums[i];
+           if(map.containsKey(lookUp)){
+               return new int []{map.get(lookUp), i};
+           }else{
+               map.put(nums[i],i);
+               return twoSum2(nums,target, ++i);
+           }
+        }
+    }
 ```
