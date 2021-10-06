@@ -5,7 +5,6 @@ const Input = document.querySelector('.input');
 let list = []
 axios.get('/list').then((res) => {
     list = res.data;
-    // console.log(list)
     SetData(list);
 });
 
@@ -13,10 +12,6 @@ axios.get('/list').then((res) => {
 function SetData(list) {
 
     Count.innerHTML = list.length;
-
-    
-
-
     const toadd = list.map((data, index) => {
 
 
@@ -31,53 +26,35 @@ function SetData(list) {
                     <a href="${data.data.Github}">Github</a>
                 <a href="${data.data.WebSite || "#"}">WebSite </a>
             </div>
-            
             <div>Problem: ${data.data.Problem}</div>
             <div>Description: ${data.data.Description}</div>
             
             <p>
-                <a class="btn btn-primary" data-bs-toggle="collapse" href=${"#collapseExample" + index} role="button" aria-expanded="false" aria-controls=${"collapseExample" + index}
-                >
+                <a class="btn btn-primary" data-bs-toggle="collapse" href=${"#collapseExample" + index} role="button" aria-expanded="false" aria-controls=${"collapseExample" + index}>
                     Code
                 </a>
-                
             </p>
             <div class="collapse" id=${"collapseExample" + index}>
                 <div class="card card-body">
-                
                     <h3> ${data.data.Language.toLowerCase()} </h3>
-
                     <pre>
                     <code>
-                    ${data.content.split("```")[1].substr(data.content.split("```")[1].indexOf("\n"))
-    }
+                    // ${data.content.split("```")[1].substr(data.content.split("```")[1].indexOf("\n"))}
+                    ${data.content.split("```")[1]}
                     </code>
-                    </pre>
-
-
-            
-                        
-                    
+                    </pre> 
             </div>
             </div>
         </div>
         `
-
     }).join('');
-
     listData.innerHTML = toadd;
 }
 
 function SetList(e) {
-
     if (Input.value == "") return SetData(list);
     const q = new RegExp(Input.value, 'gi');
-
     const newlist = list.filter((data) => {
-
-        // console.log(data.data);
-
-
         return data.data.Name.match(q) || data.data.Problem.match(q);
     })
     SetData(newlist);

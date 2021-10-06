@@ -3,7 +3,7 @@ Name: 'Dinsha Jaiswal'
 Github: 'https://github.com/fleurdelis07'
 WebSite: 'https://www.linkedin.com/in/ankitrao/'
 Problem: 'Find the shortest path in a maze'
-Description: 'Given a maze in the form of binary rectangular matrix, find the shortest path's length in the maze.'
+Description: 'Given a maze in the form of binary rectangular matrix, find the shortest paths length in the maze.'
 Language: 'c++' 
 ---
 ```c++

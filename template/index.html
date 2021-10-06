@@ -82,7 +82,26 @@
         color: black !important;
         font-family: monospace;
     }
+    .top{
+        position: relative;
+        width: 2.2rem;
+        height: 2.2rem;
+        right: 0px;
+        bottom: 0px;
+        outline: none;
+       
+    }
 
+    .bot{
+        display: flex;
+        /* background-color: black; */
+        /* margin-left: 0px; */
+        padding: 0.2rem;
+        margin:0.2rem;
+        justify-content:center ;
+        align-items: flex-end;
+        flex-direction: column-reverse;
+    }
     @media (max-width:1024px) {
         .item {
             width: 85vw;
@@ -104,10 +123,11 @@
     .input-group:hover {
         width: 16.2rem;
     }
+    
 </style>
 
 <body>
-
+    <a name="top"></a>
     <div class="container">
         <h1>Recursion Hub</h1>
         <a href="https://github.com/zeel-codder/Recursion-Hub" target="_blank"><img src="/public/Hacktoberfest2021.png" alt="none"></a>
@@ -143,9 +163,9 @@
 
 
     </div>
-
     </div>
-
+    <!--  -->
+    <a class='bot' href="#top"><button><img class='top' src="/public/top.png" alt="Back to Top" ></button></a>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
