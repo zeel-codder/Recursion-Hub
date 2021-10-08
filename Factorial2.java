@@ -1,3 +1,12 @@
+---
+Name:'Kanailal Manna'
+Github: 'https://github.com/KanailalManna'
+Problem: 'Nth Factorial Number'
+Description: 'Find the Nth Factorial Number.'
+Language: 'java' 
+---
+
+```java
 import java.util.*;
 class Factorial{  
  public static void main(String args[]){  
@@ -11,3 +20,4 @@ class Factorial{
   System.out.println("Factorial of "+number+" is: "+fact);    
  }  
 }  
+```
