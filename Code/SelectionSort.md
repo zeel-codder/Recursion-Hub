@@ -1,11 +1,11 @@
 ---
-Name: "Hasan Kataya"
-Github: "https://github.com/Hkataya"
-WebSite: ""
-Problem: "Recursive Selection Sort"
-Description: "Sort an array of n elements using selection sort. Complexity O(n^2)"
-Explanation: Selection Sort works by splitting the arrary in a two subarrays (one sorted and one unsorted). In every iteration, the minimum element (ascending order) from the unsorted subarray is chosen and moved to the sorted subarray.
-Language: "java"
+Name: 'Hasan Kataya'
+Github: 'https://github.com/Hkataya'
+WebSite: ''
+Problem: 'Recursive Selection Sort'
+Description: 'Sort an array of n elements using selection sort. Complexity O(n^2)'
+Explanation: 'Selection Sort works by splitting the arrary in a two subarrays (one sorted and one unsorted). In every iteration, the minimum element (ascending order) from the unsorted subarray is chosen and moved to the sorted subarray.'
+Language: 'java' 
 ---
 
 ```java
