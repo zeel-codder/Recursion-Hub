@@ -4,7 +4,6 @@ Github: 'https://github.com/AlexLunaP'
 WebSite: ''
 Problem: 'Compare two vectors.'
 Description: 'This program uses recursion to find out if two vectors are equal.'
-Explanation: 'Each iteration of function "compare_vectors" checks if both vectors have the same index, otherwise vectors are not equal. If vectors have the same index, then values are compared, if they are equal then the index is increased and "compare_vectors" is called recursively.'   
 Language: 'C'
 ---
 
