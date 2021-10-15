@@ -13,11 +13,13 @@ app.get('/', (req, res) => {
 });
 
 app.get('/list', (req, res) => {
-
-    const list = GetList()
-    // const data = JSON.stringify(list);
-    // console.log(data)
-    res.send(JSON.stringify(list));
+    try {
+        const list = GetList()
+        res.send(JSON.stringify(list));
+    } catch (error) {
+        console.log("Error in GetList Function\n",error);
+    }
+  
 });
 
 
@@ -29,23 +31,23 @@ app.listen(port, () => {
 
 
 function GetList() {
-
+    let ct=0;
+    try {
     const list = []
     let filesList = fs.readdirSync(__dirname + '/Code');
-    // fs.readdir(,(err, files) => {
-    //     if (err) return;
-    //     filesList = files;
-    // })
-
-    // console.log(filesList)
-
     filesList.forEach(file => {
+        
         const data = fs.readFileSync(__dirname + '/Code/' + file);
         const dataForm = matter(data);
     
         const toAdd = { "data": dataForm.data, "content": dataForm.content }
         list.push(toAdd);
+        ct++;
     })
-
     return list;
+}
+    catch (e) {
+        console.log("Error in File No(0-based)",ct)
+    }
+   
 } 

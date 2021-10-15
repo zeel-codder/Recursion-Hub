@@ -9,7 +9,6 @@ Explanation: 'The Greatest Common Divisor (also
   given set of numbers.
   The Least Common Multiple (also known as LCM) is the smallest 
   positive multiple that is common to two or more numbers.
-   
   Example:
   GCD(12,18)=6
   LCM(12,18)=36'   
