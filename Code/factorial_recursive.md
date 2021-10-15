@@ -3,10 +3,10 @@ Name: 'Shivam Jindal'
 Github: 'https://github.com/Shivamjindal1'
 WebSite: 'https://shivamjindal1.github.io/website'
 Problem: 'Print Factorial of any number'
-Description: 'For The Given number n print it's factorial.'
+Description: 'For The Given number n print its factorial.'
 Language: 'Python' 
 ---
-```
+```py
 # Factorial of any number using python
 def factorial_recursive(n):
     """

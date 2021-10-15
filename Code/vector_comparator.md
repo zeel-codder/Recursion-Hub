@@ -6,7 +6,6 @@ Problem: 'Compare two vectors.'
 Description: 'This program uses recursion to find out if two vectors are equal.'
 Language: 'C'
 ---
-
 ```C
 #include <stdlib.h>
 #include <stdio.h>

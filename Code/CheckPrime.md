@@ -4,7 +4,7 @@ Github: 'https://github.com/Novaenn'
 WebSite: ''
 Problem: 'Check Prime Number'
 Description: 'Checks if the inserted number is prime.'
-Explanation : We check for every factor from 2 to the number and if num % i is equal zero then i is a factor of num. If we can't find any factor the number will be prime.
+Explanation : We check for every factor from 2 to the number and if num % i is equal zero then i is a factor of num. If we cant find any factor the number will be prime.
 Language: 'python' 
 ---
 ```python

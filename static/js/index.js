@@ -10,45 +10,49 @@ axios.get('/list').then((res) => {
 
 
 function SetData(list) {
-
-    Count.innerHTML = list.length;
-    const toadd = list.map((data, index) => {
-
-
-        console.log(data);
-
-
-        return `
+    let ct=0;
+    try{
+        Count.innerHTML = list.length;
+        const toadd = list.map((data, index) => {
+            
+            ct++;
+            console.log(data);
+            
+            
+            return `
             <div class="item">
-                
-                <div class="row">
-                    <h3>${data.data.Name}</h3>
-                    <a href="${data.data.Github}">Github</a>
-                <a href="${data.data.WebSite || "#"}">WebSite </a>
+            
+            <div class="row">
+            <h3>${data.data.Name}</h3>
+            <a href="${data.data.Github}">Github</a>
+            <a href="${data.data.WebSite || "#"}">WebSite </a>
             </div>
             <div>Problem: ${data.data.Problem}</div>
             <div>Description: ${data.data.Description}</div>
             
             <p>
-                <a class="btn btn-primary" data-bs-toggle="collapse" href=${"#collapseExample" + index} role="button" aria-expanded="false" aria-controls=${"collapseExample" + index}>
-                    Code
-                </a>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href=${"#collapseExample" + index} role="button" aria-expanded="false" aria-controls=${"collapseExample" + index}>
+            Code
+            </a>
             </p>
             <div class="collapse" id=${"collapseExample" + index}>
-                <div class="card card-body">
-                    <h3> ${data.data.Language.toLowerCase()} </h3>
-                    <pre>
-                    <code>
-                    // ${data.content.split("```")[1].substr(data.content.split("```")[1].indexOf("\n"))}
-                    ${data.content.split("```")[1]}
-                    </code>
-                    </pre> 
+            <div class="card card-body">
+            <h3> ${data.data.Language.toLowerCase()} </h3>
+            <pre>
+            <code>
+            // ${data.content.split("```")[1].substr(data.content.split("```")[1].indexOf("\n"))}
+            ${data.content.split("```")[1]}
+            </code>
+            </pre> 
             </div>
             </div>
-        </div>
-        `
-    }).join('');
-    listData.innerHTML = toadd;
+            </div>
+            `
+        }).join('');
+        listData.innerHTML = toadd;
+    }catch(e){
+            console.log("Document No:",ct);
+    }
 }
 
 function SetList(e) {

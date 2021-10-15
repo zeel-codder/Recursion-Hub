@@ -4,7 +4,7 @@ Github: 'https://github.com/Novaenn'
 WebSite: ''
 Problem: 'Recursive Insertion Sort'
 Description: 'Order an array of n elements with Insertion Sort.'
-Explanation : Insertion Sort works by splitting the arrary in a sorted part and an unsorted one, each iteration places one value from the unsorted pile into the sorted one.
+Explanation : 'Insertion Sort works by splitting the arrary in a sorted part and an unsorted one, each iteration places one value from the unsorted pile into the sorted one.'
 Language: 'java' 
 ---
 ```java

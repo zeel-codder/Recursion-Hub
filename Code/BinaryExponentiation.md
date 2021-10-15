@@ -6,7 +6,6 @@ Problem: 'Binary Exponentiation'
 Description: 'Calculating power in O(logn)'  
 Language: 'Java' 
 ---
-
 ```java
 
 public class BinaryExponentiation {
