@@ -1,13 +1,12 @@
 
 ---
-Name: 'Abhishek AB'  
-Github: 'https://github.com/kehsihba  
-WebSite: ''  
-Problem: 'QuickSort in Python'  
-Description: 'Recursive method - QuickSort '  
-Language: 'Python' 
+| Name | Github | Website | Problem | Description | Language
+|--|--|--|--|--|--|
+|Abhishek AB| https://github.com/kehshiba| |QuickSort in Python | Recursive method - QuickSort | Python
+
 ---
-```
+
+```python
 def Quicksort(a, l, r):
   current = l+1
   if r <= current:
