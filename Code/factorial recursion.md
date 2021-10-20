@@ -1,3 +1,11 @@
+---
+Name: 'Scientist69'
+Github: 'https://github.com/Scientist69'
+Problem: 'Factorial of a number'
+Description: 'Find the Factorial of a given number.'
+Language: 'c' 
+---
+```
 #include <stdio.h>  
 int fact (int);  
 int main()  
@@ -22,4 +30,5 @@ int fact(int n)
     {  
         return n*fact(n-1);  
     }  
-}  
+} 
+```
