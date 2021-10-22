@@ -2,13 +2,11 @@
 Name: 'Manju Thakur'
 Github: 'https://github.com/mthakur7'
 Problem: 'print KPC'
-Description: 'To print the list of all KPC'
-Explanation: ' You are given a string str. The string str will contains numbers only, where each number stands for a key pressed on a mobile phone'
-   
-    
+Description: 'To print the list of all KPC'  
 Language: 'java'
 ---
-```import java.io.*;
+```java
+import java.io.*;
 import java.util.*;
 
 public class Main {
