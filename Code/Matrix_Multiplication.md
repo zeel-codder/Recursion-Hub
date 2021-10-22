@@ -6,7 +6,7 @@ Description: 'The program uses the concept of recursion to multiply two matrices
 Language: 'C'
 ---
 
-
+```C
 // Recursive code for Matrix Multiplication
 #include <stdio.h>
 
@@ -91,3 +91,4 @@ int main()
 
     return 0;
 }
+```
