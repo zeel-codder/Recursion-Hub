@@ -1,9 +1,9 @@
-
 ---
-| Name | Github | Website | Problem | Description | Language
-|--|--|--|--|--|--|
-|Abhishek AB| https://github.com/kehshiba| |QuickSort in Python | Recursive method - QuickSort | Python
-
+Name: 'Abhishek AB'
+Github: 'https://github.com/kehshiba'
+Problem: 'QuickSort in Python'
+Description: 'Recursive method - QuickSort'
+Language: 'Python'
 ---
 
 ```python
