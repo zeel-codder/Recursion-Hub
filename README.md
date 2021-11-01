@@ -1,4 +1,4 @@
-# Hacktoberfest2021 Recursion Hub
+# Recursion Hub
 
 Collections of the solution of  **recursive problem**. You Don't Need to write an optimal solution just write code with help of Recursion.
 
