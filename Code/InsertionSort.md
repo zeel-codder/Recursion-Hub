@@ -7,6 +7,7 @@ Description: 'Order an array of n elements with Insertion Sort.'
 Explanation : 'Insertion Sort works by splitting the arrary in a sorted part and an unsorted one, each iteration places one value from the unsorted pile into the sorted one.'
 Language: 'java' 
 ---
+
 ```java
 /**
 Insertion Sort compares every element on the unsorted part to those on the sorted part. 
@@ -41,3 +42,4 @@ public class InsertionSort{
         arr[j+1] = last;
     }
 }
+```
