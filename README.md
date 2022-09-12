@@ -1,20 +1,20 @@
 # Recursion Hub
 
-Collections of the solution of  **recursive problem**. You Don't Need to write an optimal solution just write code with help of Recursion.
+Collections of solutions to  **recursive problems**. You Don't Need to write an optimal solution just write code with the help of Recursion.
 
 <img src="./static/Hacktoberfest2021.png" width=300 height=300 style="margin:0 auto;" alt="none">
 
-## Ways Contribute
+## Ways To Contribute
 
-They are two main contributions you can make. 
-1. The first is you can edit the website node app and make it better.  
-2. The second way is that you can write any problem solution in recursion. but just make sure the problem is not written yet.
+There are two main contributions you can make. 
+1. The first is you can edit and improve the website node app.  
+2. The second way is to write any problem and solution in recursion, just make sure the problem is not yet written.
 
 
-## Setup Node App(If you what to do first type contribution)
+## Setup Node App(If you intend to do the first contribution option 1.)
 
 1. Install Node js And Npm
-2. After clone the App go to the root folder and run the below command
+2. After cloning the App, go to the root folder and run the command below
 ```bash
 npm i
 ```
@@ -31,9 +31,9 @@ nodemon server.js
 
 ###### 1. Fork and clone this repository.
 
-###### 2. Create new branch with your name ([Find more details](https://github.com/firstcontributions/first-contributions))
+###### 2. Create a new branch with your name ([Find more details](https://github.com/firstcontributions/first-contributions))
 
-###### 3. Select any problem which can solve by recursion. Please take the problem which has not been taken or written yet. You can see on the website of this repo. and check if the problem is written or not. And If after this you aren't able to find that problem is written or taken then create a new issue with **newproblem** tag.
+###### 3. Select any problem which can be solved by recursion. Please choose the problem which has not yet been taken or written. You can see on the website of this repo and check if the problem is written or not. And If after this you aren't able to find that problem is written or taken then create a new issue with **newproblem** tag.
 
 ###### 4. Select any programing language of your choice(Make Change in ***./Code*** folder only). and write code to solve the problem(Make sure the file name explains the problem in brief). Here you have to create one Markdown file for code.
 MarkDown File Formate
@@ -66,7 +66,7 @@ MarkDown File Formate
             Name: 'Your Ans'  
             ```
 2. Your Code
-    Write code in this md formate. Try to add problem explanation in comment in your code. See demo code.
+    Write code in this md format. Try to add problem explanation in comment in your code. See demo code.
     <br>
     <img src="/static/code.png">
 
@@ -90,4 +90,4 @@ MarkDown File Formate
   </tr>
 </table>
 
-## Thanks You
+## Thank You!
