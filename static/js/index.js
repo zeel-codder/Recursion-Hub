@@ -1,4 +1,3 @@
-
 const Count = document.querySelector('.count');
 const listData = document.querySelector('.container-list');
 const Input = document.querySelector('.input');
@@ -13,23 +12,19 @@ function SetData(list) {
     let ct=0;
         Count.innerHTML = list.length;
         const toadd = list.map((data, index) => {
-            
             ct++;
             console.log(data);
-            
             try
             {
             return `
             <div class="item">
-            
             <div class="row">
-            <h3>${data.data.Name}</h3>
-            <a href="${data.data.Github}">Github</a>
-            <a href="${data.data.WebSite || "#"}">WebSite </a>
+                <h3>${data.data.Name}</h3>
+                <a href="${data.data.Github}">Github</a>
+                <a href="${data.data.WebSite || "#"}">WebSite </a>
             </div>
             <div>Problem: ${data.data.Problem}</div>
             <div>Description: ${data.data.Description}</div>
-            
             <p>
             <a class="btn btn-primary" data-bs-toggle="collapse" href=${"#collapseExample" + index} role="button" aria-expanded="false" aria-controls=${"collapseExample" + index}>
             Code
@@ -61,7 +56,12 @@ function SetList(e) {
     if (Input.value == "") return SetData(list);
     const q = new RegExp(Input.value, 'gi');
     const newlist = list.filter((data) => {
-        return data.data.Name.match(q) || data.data.Problem.match(q);
+        try{
+            return data.data.Name.match(q) || data.data.Problem.match(q);
+        }catch(e){
+            return false
+        }
+        
     })
     SetData(newlist);
 }
