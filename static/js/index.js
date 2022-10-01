@@ -10,38 +10,38 @@ axios.get('/list').then((res) => {
 
 function SetData(list) {
     let ct=0;
-        Count.innerHTML = list.length;
         const toadd = list.map((data, index) => {
-            ct++;
             console.log(data);
             try
             {
+            ct++;
             return `
             <div class="item">
+            <h3>${data.data.Name}</h3>
             <div class="row">
-                <h3>${data.data.Name}</h3>
                 <a href="${data.data.Github}">Github</a>
                 <a href="${data.data.WebSite || "#"}">WebSite </a>
             </div>
             <div>Problem: ${data.data.Problem}</div>
             <div>Description: ${data.data.Description}</div>
             <p>
-            <a class="btn btn-primary" data-bs-toggle="collapse" href=${"#collapseExample" + index} role="button" aria-expanded="false" aria-controls=${"collapseExample" + index}>
-            Code
-            </a>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href=${"#collapseExample" + index} role="button" aria-expanded="false" aria-controls=${"collapseExample" + index}>
+                    Code
+                </a>
             </p>
             <div class="collapse" id=${"collapseExample" + index}>
             <div class="card card-body">
             <h3> ${data.data.Language.toLowerCase()} </h3>
             <pre>
-            <code>
-            // ${data.content.split("```")[1].substr(data.content.split("```")[1].indexOf("\n"))}
-            ${data.content.split("```")[1]}
-            </code>
+                <code>
+                    ${data.content.split("```")[1].substr(data.content.split("```")[1].indexOf("\n"))}
+                    ${data.content.split("```")[1]}
+                </code>
             </pre> 
             </div>
             </div>
             </div>
+            <br>
             `
             }
             catch(e)
@@ -49,6 +49,7 @@ function SetData(list) {
                 console.log("Unable to load Problem #",ct);
             }
         }).join('');
+        Count.innerHTML = ct;
         listData.innerHTML = toadd;
 }
 
