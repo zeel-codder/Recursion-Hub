@@ -11,14 +11,14 @@ axios.get('/list').then((res) => {
 
 function SetData(list) {
     let ct=0;
-    try{
         Count.innerHTML = list.length;
         const toadd = list.map((data, index) => {
             
             ct++;
             console.log(data);
             
-            
+            try
+            {
             return `
             <div class="item">
             
@@ -48,11 +48,13 @@ function SetData(list) {
             </div>
             </div>
             `
+            }
+            catch(e)
+            {
+                console.log("Unable to load Problem #",ct);
+            }
         }).join('');
         listData.innerHTML = toadd;
-    }catch(e){
-            console.log("Document No:",ct);
-    }
 }
 
 function SetList(e) {
