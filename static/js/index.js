@@ -1,6 +1,7 @@
 const Count = document.querySelector(".count");
 const listData = document.querySelector(".container-list");
 const Input = document.querySelector(".input");
+let count=0;
 let list = [];
 function fetch(){
 	axios.get("/list").then((res) => {
@@ -11,6 +12,8 @@ function fetch(){
 
 function SetData(list) {
 	if(!list){
+		if(count>=10) return;
+		count++;
 		fetch()
 		return;
 	}
