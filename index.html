@@ -12,21 +12,55 @@
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 <!-- <link rel="stylesheet" href="/public/css/prisum.css"> -->
 <style>
-    div.item div{
+    .container-list {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .item * {
+        color: black !important;
+        font-family: var(--bs-body-font-family) !important;
+    }
+
+    .item .btn {
+        color: white !important;
+    }
+
+    .item a {
+        color: blue !important;
+    }
+
+    .item a,
+    .item div {
+        font-size: 1rem !important;
+    }
+
+    .card-body pre {
+        margin-top: -2rem !important;
+        margin-bottom: -4rem !important;
+    }
+
+    div.item div {
         margin-top: 5px;
     }
-    div.item{
+
+    div.item {
         border: 1px solid #a8a8a8;
-        padding: 5px;
+        padding: 1rem;
         border-radius: 10px;
+
+        width: 90%;
     }
-    div.item .btn{
+
+    div.item .btn {
         margin-top: 5px;
     }
-    div.item div.row{
+
+    div.item div.row {
         display: flex;
     }
 </style>
+
 <body>
     <nav style="border-bottom:1px dashed black ;" id="top" class="navbar bg-light">
         <div class="container-fluid">
@@ -34,15 +68,16 @@
                 <img src="/public/RCHUB.png" width="30" height="30" class="d-inline-block align-top" alt="">
                 Recursion Hub
             </a>
-        <div class="d-flex" role="search">
-            <input onkeyup="SetList(event)" class="form-control me-2 input" type="search" placeholder="Search" aria-label="Search">
-        </div>
+            <div class="d-flex" role="search">
+                <input onkeyup="SetList(event)" class="form-control me-2 input" type="search" placeholder="Search"
+                    aria-label="Search">
+            </div>
         </div>
     </nav>
-        <h3 style="padding: 5px;"> Count of Programs: <span class="count">0</span></h3>
-        <hr>
-        <div class="container-list" style="max-width: 500px;margin:auto;">
-            <!-- <div class="item">
+    <h3 style="padding: 5px;"> Count of Programs: <span class="count">0</span></h3>
+    <hr>
+    <div class="container-list">
+        <!-- <div class="item">
 
                 <div class="row">
                     <h3>Name</h3>
@@ -64,10 +99,11 @@
                     <pre><code class="language-css"></code></pre>
                 </div>
             </div> -->
-        </div>
+    </div>
     </div>
     <!--  -->
-    <a style="left:5px;bottom:5px;position:fixed;" class='bot' href="#top"><img width="20px" class='top' src="/public/top.png" alt="Back to Top" ></a>
+    <a style="left:5px;bottom:5px;position:fixed;" class='bot' href="#top"><img width="20px" class='top'
+            src="/public/top.png" alt="Back to Top"></a>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
