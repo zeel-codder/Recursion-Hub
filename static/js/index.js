@@ -2,12 +2,18 @@ const Count = document.querySelector(".count");
 const listData = document.querySelector(".container-list");
 const Input = document.querySelector(".input");
 let list = [];
-axios.get("/list").then((res) => {
-	list = res.data;
-	SetData(list);
-});
+function fetch(){
+	axios.get("/list").then((res) => {
+		list = res.data;
+		SetData(list);
+	});
+}
 
 function SetData(list) {
+	if(!list){
+		fetch()
+		return;
+	}
 	let ct = 0;
 	const toadd = list
 		.map((data, index) => {
@@ -68,3 +74,5 @@ function SetList(e) {
 	});
 	SetData(newlist);
 }
+
+fetch()

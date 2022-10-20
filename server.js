@@ -12,9 +12,9 @@ app.get("/", (req, res) => {
 	res.sendFile(__dirname + "/index.html");
 });
 
-app.get("/list", (req, res) => {
+app.get("/list", async (req, res) => {
 	try {
-		const list = GetList();
+		const list = await GetList();
 		res.send(JSON.stringify(list));
 	} catch (error) {
 		console.log("Error in GetList Function\n", error);
@@ -33,6 +33,7 @@ function GetList() {
 		const list = [];
 		let filesList = fs.readdirSync(__dirname + "/Code");
 		filesList.forEach((file) => {
+			// console.log(__dirname + "/Code/" + file);
 			const data = fs.readFileSync(__dirname + "/Code/" + file);
 			const dataForm = matter(data);
 
