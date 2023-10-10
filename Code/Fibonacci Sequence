@@ -1,0 +1,21 @@
+---
+Name: 'Abhay chaurasia'  
+Github: 'https://github.com/Dev-Abhay01'  
+WebSite: ''  
+Problem: `Fibonacci Sequence'  
+Description: 'The fibonacci function calculates the nth Fibonacci number using recursion. The base case is when n is less than or equal to 1.'  
+Language: 'python' 
+---
+```python
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+# Example usage
+result = fibonacci(6)
+print("Fibonacci sequence at index 6:", result)  # Output: Fibonacci sequence at index 6: 8
+
+
+```
