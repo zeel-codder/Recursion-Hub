@@ -1,28 +1,28 @@
 const Count = document.querySelector(".count");
 const listData = document.querySelector(".container-list");
 const Input = document.querySelector(".input");
-let count=0;
+let count = 0;
 let list = [];
-function fetch(){
-	axios.get("/list").then((res) => {
-		list = res.data;
-		SetData(list);
-	});
+function fetch() {
+  axios.get("/list").then((res) => {
+    list = res.data;
+    SetData(list);
+  });
 }
 
 function SetData(list) {
-	if(!list){
-		if(count>=10) return;
-		count++;
-		fetch()
-		return;
-	}
-	let ct = 0;
-	const toadd = list
-		.map((data, index) => {
-			try {
-				ct++;
-				return `
+  if (!list) {
+    if (count >= 10) return;
+    count++;
+    fetch();
+    return;
+  }
+  let ct = 0;
+  const toadd = list
+    .map((data, index) => {
+      try {
+        ct++;
+        return `
             <div class="item">
             <h3>${data.data.Name}</h3>
             <div class="row">
@@ -33,10 +33,10 @@ function SetData(list) {
             <div>Description: ${data.data.Description}</div>
             <p>
                 <a class="btn btn-primary" data-bs-toggle="collapse" href=${
-									"#collapseExample" + index
-								} role="button" aria-expanded="false" aria-controls=${
-					"collapseExample" + index
-				}>
+                  "#collapseExample" + index
+                } role="button" aria-expanded="false" aria-controls=${
+          "collapseExample" + index
+        }>
                     Code
                 </a>
             </p>
@@ -46,9 +46,8 @@ function SetData(list) {
             <pre>
                 <code>
                     ${data.content
-											.split("```")[1]
-											.substr(data.content.split("```")[1].indexOf("\n"))}
-                    ${data.content.split("```")[1]}
+                      .split("```")[1]
+                      .substr(data.content.split("```")[1].indexOf("\n"))}
                 </code>
             </pre> 
             </div>
@@ -56,26 +55,26 @@ function SetData(list) {
             </div>
             <br>
             `;
-			} catch (e) {
-				console.log("Unable to load Problem #", ct);
-			}
-		})
-		.join("");
-	Count.innerHTML = ct;
-	listData.innerHTML = toadd;
+      } catch (e) {
+        console.log("Unable to load Problem #", ct);
+      }
+    })
+    .join("");
+  Count.innerHTML = ct;
+  listData.innerHTML = toadd;
 }
 
 function SetList(e) {
-	if (Input.value == "") return SetData(list);
-	const q = new RegExp(Input.value, "gi");
-	const newlist = list.filter((data) => {
-		try {
-			return data.data.Name.match(q) || data.data.Problem.match(q);
-		} catch (e) {
-			return false;
-		}
-	});
-	SetData(newlist);
+  if (Input.value == "") return SetData(list);
+  const q = new RegExp(Input.value, "gi");
+  const newlist = list.filter((data) => {
+    try {
+      return data.data.Name.match(q) || data.data.Problem.match(q);
+    } catch (e) {
+      return false;
+    }
+  });
+  SetData(newlist);
 }
 
-fetch()
+fetch();
