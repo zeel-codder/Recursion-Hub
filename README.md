@@ -11,8 +11,8 @@ There are two main contributions you can make.
 
 ## Setup Node App(If you intend to do the first contribution option 1.)
 
-1. Install Node js And Npm
-2. After cloning the App, go to the root folder and run the command below
+1. Install Node.js and npm.
+2. After cloning the app, go to the root folder and run the command below:
 
 ```bash
 npm i
@@ -38,7 +38,7 @@ nodemon server.js
 
 ###### 4. Select any programing language of your choice(Make Change in **_./Code_** folder only). and write code to solve the problem(Make sure the file name explains the problem in brief). Here you have to create one Markdown file for code.
 
-MarkDown File Formate
+**MarkDown File Formate**
 
 1. Contributor Introduction And Problem Information
 
