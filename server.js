@@ -9,40 +9,43 @@ const matter = require("gray-matter");
 app.use("/public", express.static(__dirname + "/static"));
 
 app.get("/", (req, res) => {
-	res.sendFile(__dirname + "/index.html");
+  res.sendFile(__dirname + "/index.html");
 });
 
 app.get("/list", async (req, res) => {
-	try {
-		const list = await GetList();
-		res.send(JSON.stringify(list));
-	} catch (error) {
-		console.log("Error in GetList Function\n", error);
-	}
+  try {
+    const list = await GetList();
+    res.send(JSON.stringify(list));
+  } catch (error) {
+    console.log("Error in GetList Function\n", error);
+  }
 });
 
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
-	console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`Example app listening at http://localhost:${port}`);
 });
 
 function GetList() {
-	let ct = 0;
-	try {
-		const list = [];
-		let filesList = fs.readdirSync(__dirname + "/Code");
-		filesList.forEach((file) => {
-			// console.log(__dirname + "/Code/" + file);
-			const data = fs.readFileSync(__dirname + "/Code/" + file);
-			const dataForm = matter(data);
-
-			const toAdd = { data: dataForm.data, content: dataForm.content };
-			list.push(toAdd);
-			ct++;
-		});
-		return list;
-	} catch (e) {
-		console.log("Error in File No(0-based)", ct);
-	}
+  let ct = 0;
+  try {
+    const list = [];
+    let filesList = fs.readdirSync(__dirname + "/Code");
+    filesList.forEach((file) => {
+      // console.log(__dirname + "/Code/" + file);
+      const data = fs.readFileSync(__dirname + "/Code/" + file);
+      const dataForm = matter(data);
+      const toAdd = { data: dataForm.data, content: dataForm.content };
+      list.push(toAdd);
+      ct++;
+    });
+    return list;
+  } catch (e) {
+	console.log(e)
+    console.log("Error in File No(0-based)", ct);
+  }
 }
+
+
+module.exports = app;

@@ -1,5 +1,5 @@
 ---
-Name:'Kanailal Manna'
+Name: 'Kanailal Manna'
 Github: 'https://github.com/KanailalManna'
 Problem: 'Nth Factorial Number'
 Description: 'Find the Nth Factorial Number.'
