@@ -1,8 +1,6 @@
 # Recursion Hub
 
-Collections of solutions to **recursive problems**. You Don't Need to write an optimal solution just write code with the help of Recursion.
-
-<img src="./static/Hacktoberfest2021.png" width=300 height=300 style="margin:0 auto;" alt="none">
+Collections of solutions to **recursive problems**. You don't need to write an optimal solution, just write code with the help of recursion.
 
 ## Ways To Contribute
 
